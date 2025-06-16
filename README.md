@@ -1,0 +1,2 @@
+# passtty
+CLI Password Manager
