@@ -71,11 +71,9 @@ def create_file(text: str, path: str) -> None:
 def write_encrypted_string(
     text: str, filename: str, output_dir: str, key: bytes
 ) -> str:
-    """Шифрует строку и сохраняет в файл с указанным именем. Возвращает путь к файлу."""
     if len(key) != AES_KEY_SIZE:
         raise ValueError("Неверная длина AES-ключа")
 
-    # Убедимся, что директория существует
     os.makedirs(output_dir, exist_ok=True)
 
     output_path = os.path.join(output_dir, f"{filename}.enc")
