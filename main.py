@@ -1,6 +1,7 @@
 import warnings
+from cryptography.utils import CryptographyDeprecationWarning
 
-warnings.simplefilter("ignore")
+warnings.filterwarnings("ignore", category=CryptographyDeprecationWarning)
 
 import os
 from pgpy import PGPKey, PGPMessage
