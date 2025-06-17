@@ -5,6 +5,6 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.8"
 dependencies = [
-    "cryptography>=45.0.4",
     "fraza>=0.2.0",
+    "pgpy>=0.6.0",
 ]
